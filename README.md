@@ -1,8 +1,9 @@
 # AWS Secure Landing Zone Blueprint
 
 ## Developed by UruPraxis Cloud Solutions
-[![AWS Certified - Solutions Architect Professional](https://shields.io)](https://credly.com)
-[![AWS Certified - Security Specialty](https://shields.io)](https://credly.com)
+[![AWS Certified - Solutions Architect Professional](https://shields.io)](https://www.credly.com/users/juan-manuel-ruiz.b293e442/badges/credly)
+[![AWS Certified - Security Specialty](https://shields.io)](https://www.credly.com/users/juan-manuel-ruiz.b293e442/badges/credly)
+
 
 A production-ready, highly compliant AWS Landing Zone baseline automated using **AWS CDK V2 (Python)**. This blueprint implements enterprise-grade infrastructure-as-code (IaC) governance, perimeter defense, and automated data security, following the **AWS Well-Architected Framework** and **PCI-DSS/ISO 27001** blueprints.
 
