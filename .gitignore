@@ -1,0 +1,24 @@
+# Entorno virtual de Python
+.venv/
+venv/
+ENV/
+bin/
+lib/
+share/
+include/
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Salidas de AWS CDK
+cdk.out/
+.cdk.staging/
+
+# Archivos de configuración del sistema / VS Code
+.vscode/
+.idea/
+.DS_Store

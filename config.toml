@@ -1,0 +1,45 @@
+# =========================================================
+# GLOBAL ENVIRONMENT CONFIGURATION
+# =========================================================
+[ENV]
+ENVIRONMENT = "dev"  # Active target environment by default
+
+[GLOBAL_dev]
+ACCOUNT = "123456789012"  # <-- REPLACE WITH YOUR REAL 12-DIGIT AWS ACCOUNT ID
+REGION = "eu-west-1"
+
+[GLOBAL_prod]
+ACCOUNT = "123456789012"  # <-- REPLACE WITH YOUR REAL 12-DIGIT AWS ACCOUNT ID
+REGION = "eu-west-1"
+
+# =========================================================
+# NETWORK LAYER CONFIGURATION (VPC)
+# =========================================================
+[VPC_dev]
+VPC_CIDR = "10.10.0.0/16"
+AVAILABILITY_ZONES = ["eu-west-1a", "eu-west-1b"]
+PUBLIC_SUBNET_CIDR_MASK = 24
+PRIVATE_SUBNET_CIDR_MASK = 24
+ISOLATED_SUBNET_CIDR_MASK = 24
+
+[VPC_prod]
+VPC_CIDR = "10.0.0.0/16"
+AVAILABILITY_ZONES = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+PUBLIC_SUBNET_CIDR_MASK = 24
+PRIVATE_SUBNET_CIDR_MASK = 24
+ISOLATED_SUBNET_CIDR_MASK = 24
+
+# =========================================================
+# SECURITY & COMPLIANCE LAYER CONFIGURATION
+# =========================================================
+[SECURITY_dev]
+ENABLE_STRICT_SECURITY = false
+VERSIONED = true
+REMOVAL_POLICY_DESTROY = true
+EXPIRATION_DAYS = 90
+
+[SECURITY_prod]
+ENABLE_STRICT_SECURITY = true
+VERSIONED = true
+REMOVAL_POLICY_DESTROY = false
+EXPIRATION_DAYS = 365
